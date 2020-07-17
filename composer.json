@@ -1,0 +1,39 @@
+{
+    "name": "tradesafe/omnipay-ozow",
+    "description": "Ozow driver for the Omnipay PHP payment processing library",
+    "type": "library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "ozow",
+        "payment",
+        "instant",
+        "eft"
+    ],
+    "homepage": "https://github.com/tradesafe/omnipay-ozow",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Banks",
+            "email": "richard.banks@tradesafe.co.za"
+        },
+        {
+            "name": "TradeSafe Holdings (Pty) Ltd",
+            "homepage": "https://www.tradesafe.co.za",
+            "email": "support@tradesafe.co.za"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\Ozow\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "^3.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "league/omnipay": "^3"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3"
+    }
+}
