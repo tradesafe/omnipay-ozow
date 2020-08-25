@@ -91,13 +91,9 @@ class Gateway extends AbstractGateway
         return $this->getParameter('isTest');
     }
 
-    public function setIsTest($value)
+    public function setIsTest(bool $value)
     {
-        if ($value) {
-            return $this->setParameter('isTest', 'true');
-        }
-
-        return $this->setParameter('isTest', 'false');
+        return $this->setParameter('isTest', $value);
     }
 
     public function getCancelUrl()
